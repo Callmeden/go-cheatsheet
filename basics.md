@@ -365,4 +365,37 @@ fmt.Println(y, z)      // [0 1 2 4] [0 1 2 4]
 ```
 Чтобы избежать сюрпризов, используй `copy` или полную форму среза `x[:len(x):len(x)]` для ограничения `cap`.
 
+## Пакет `slices` (Go 1.21+)
 
+**Зачем:** Заменяет ручные циклы для типовых операций над слайсами.
+
+**Импорт:** `import "slices"`
+
+**Основные функции:**
+- `slices.Contains(slice, val)` — проверка наличия элемента (bool).
+- `slices.ContainsFunc(slice, func)` — проверка по условию.
+- `slices.Index(slice, val)` — индекс первого вхождения или `-1`.
+- `slices.IndexFunc(slice, func)` — индекс по условию.
+- `slices.Equal(a, b)` — сравнение двух слайсов (bool).
+- `slices.Clone(slice)` — создать независимую копию.
+
+**Сортировка:**
+- `slices.Sort(nums)` — по возрастанию.
+- `slices.SortFunc(nums, cmp.Compare)` — через функцию сравнения.
+- `slices.SortFunc(nums, func(a, b int) int { return -cmp.Compare(a, b) })` — по убыванию.
+
+**Проверка сортировки:**
+- `slices.IsSorted(nums)` — отсортирован ли.
+- `slices.IsSortedFunc(nums, cmp.Compare)` — с кастомным условием.
+
+**Вставка и удаление:**
+- `slices.Insert(slice, i, vals...)` — вставить элементы на позицию `i`.
+- `slices.Delete(slice, i, j)` — удалить элементы с `i` до `j` (не включая `j`).
+
+**Пакет `cmp` (для сравнения):**
+- `cmp.Compare(a, b)` возвращает: `-1` (a < b), `0` (a == b), `1` (a > b).
+- `cmp.Less(a, b)` возвращает `true`, если a<b.
+
+**Важно про предикаты:**
+- В `slices.SortFunc` функция принимает **элементы** `func(a, b T) int`.
+- В `sort.Slice` функция принимает **индексы** `func(i, j int) bool`.
