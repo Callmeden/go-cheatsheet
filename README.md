@@ -17,6 +17,7 @@
 - [Отладка](./debug.md) — Delve, launch.json, режимы launch/attach/remote, отладка в VS Code.
 - [Интерфейсы](./interfaces.md) - интерфейсы.
 - [ООП](./oop.md) - принципы ООП и их реализация в Go.
+- [Обработка ошибок](./errors.md) — error, wrapping, errors.Is/As, panic/recover, defer.
 - *Далее будут добавлены:* горутины, веб-разработка.
 
 ## Задачи
