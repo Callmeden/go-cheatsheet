@@ -19,6 +19,7 @@
 - [ООП](./oop.md) - принципы ООП и их реализация в Go.
 - [Обработка ошибок](./errors.md) — error, wrapping, errors.Is/As, panic/recover, defer.
 - [defer в Go](./defer.md) — LIFO, вычисление аргументов, defer в циклах, recover.
+- [Пакеты и модули](./packages.md) — go.mod, go.sum, структура проекта, init(), импорты, tools.
 - *Далее будут добавлены:* горутины, веб-разработка.
 
 ## Задачи
