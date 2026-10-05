@@ -18,6 +18,7 @@
 - [Интерфейсы](./interfaces.md) - интерфейсы.
 - [ООП](./oop.md) - принципы ООП и их реализация в Go.
 - [Обработка ошибок](./errors.md) — error, wrapping, errors.Is/As, panic/recover, defer.
+- [defer в Go](./defer.md) — LIFO, вычисление аргументов, defer в циклах, recover.
 - *Далее будут добавлены:* горутины, веб-разработка.
 
 ## Задачи
