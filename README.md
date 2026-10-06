@@ -20,6 +20,7 @@
 - [Обработка ошибок](./errors.md) — error, wrapping, errors.Is/As, panic/recover, defer.
 - [defer в Go](./defer.md) — LIFO, вычисление аргументов, defer в циклах, recover.
 - [Пакеты и модули](./packages.md) — go.mod, go.sum, структура проекта, init(), импорты, tools.
+- [Дженерики](./generics.md) — параметры типа, constraints, ~T, рекурсивные ограничения.
 - *Далее будут добавлены:* горутины, веб-разработка.
 
 ## Задачи
