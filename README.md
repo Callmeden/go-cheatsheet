@@ -30,3 +30,4 @@
 | 01 | [Парсер логических выражений](./tasks/01-logic-parser/README.md) | Токенизация, рекурсивный спуск, приоритеты |
 | 02 | [TypeBox — универсальное хранилище](./tasks/02-typebox/README.md) | Интерфейсы, type assertion, рекурсия, парсинг STDIN |
 | 03 | [Обработка ошибок в файлообработчике](./tasks/03-fileprocessor/README.md) | Обработка ошибок, errors.Join, Unwrap, defer, интерфейсы |
+| 05 | [In-memory cache](./tasks/05-inmemorycache/README.md) | Пакеты, map, `any`, `(value, ok)` идиома |
